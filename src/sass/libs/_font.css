@@ -27,7 +27,7 @@
 
 @font-face {
     font-family: 'Roboto Condensed';
-    src: url('../fonts/.wott');
+    src: url('../fonts/RobotoCondensed-Regular.wott');
     src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
         url('../fonts/.woff') format('woff');
     font-weight: normal;

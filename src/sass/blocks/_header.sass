@@ -1,0 +1,60 @@
+header
+    position: relative
+    .nav
+        position: absolute
+        width: 100%
+        height: 132px
+        &__head
+            padding: 23px 0 9px 0
+            position: fixed
+            display: flex
+            justify-content: space-between
+            align-items: center
+            z-index: 2
+        &__logo
+            width: 96px
+            height: 100px
+        &__list
+            margin: 0
+            display: flex
+            justify-content: space-between
+            align-items: center
+            list-style-type: none
+            padding: none
+            height: 14px
+        &__list-item
+            border-right: 1px dotted rgba(255, 255, 255, 0.4)
+            &:last-child
+                border-right: none
+            a 
+                display: block
+                font-size: 15px
+                line-height: 16px
+                font-weight: 400
+                color: #ffffff
+                padding: 0 10px
+                cursor: pointer
+                &:hover
+                    color: $main-color
+        &__number
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            margin-left: 50px
+            a
+                font-size: 19px
+                line-height: 24px
+                font-weight: 700
+                color: #ffffff
+                &:hover
+                    text-decoration: none
+        &__tel
+            display: flex
+            flex-direction: column 
+            align-items: flex-end
+        &__tel-text
+            font-size: 14px
+            line-height: 24px
+            font-weight: 300
+            color: #ffffff
+            
