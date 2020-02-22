@@ -1,26 +1,44 @@
 @font-face {
-    font-family: 'Museo Sans Cyrl';
-    src: local('MuseoSansCyrl-500'),
-        url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
-        url('../fonts/MuseoSansCyrl-500.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Museo Sans Cyrl';
-    src: local('MuseoSansCyrl-300'),
-        url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
-        url('../fonts/MuseoSansCyrl-300.woff') format('woff');
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.woff');
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts/Roboto-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Museo Sans Cyrl';
-    src: local('MuseoSansCyrl-700'),
-        url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
-        url('../fonts/MuseoSansCyrl-700.woff') format('woff');
-    font-weight: 700;
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff');
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/.wott');
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
+        url('../fonts/.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/RobotoCondensed-Bold.wott');
+    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
+        url('../fonts/RobotoCondensed-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
