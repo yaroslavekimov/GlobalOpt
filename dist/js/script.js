@@ -20,6 +20,7 @@ $(document).ready(function(){
     $('.carousel__item').slick({
         speed: 1200,
         adaptiveHeight: false,
+        autoplay: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="../icon/reviews/reviews_prew.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../icon/reviews/reviews_next.svg"></button>',
         responsive: [
@@ -103,5 +104,6 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
+
     new WOW().init();
 });
