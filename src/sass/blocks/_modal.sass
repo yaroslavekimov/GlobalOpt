@@ -1,0 +1,47 @@
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.56)
+.modal
+    display: none
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border-radius: 50px
+    padding: 40px
+    width: 1000px
+    min-height: 300px
+    background-color: rgba(255, 255, 255, 0.7)
+    &__close
+        position: absolute
+        top: 0
+        right: -40px
+        color: $main-color
+        font-size: 40px
+        line-height: 20px
+        cursor: pointer
+    &__subtitle
+        text-align: center
+        font-size: 19px
+        line-height: 1.2
+        font-weight: 700
+        color: $text-color
+    &__subheader
+        text-align: center
+        font-size: 19px
+        line-height: 1.2
+        font-weight: 700
+        color: $text-color
+    &__desc
+        margin-top: 11px
+        text-align: center
+        font-size: 14px
+        line-height: 1.2
+        font-weight: 500
+        color: #0d0d0d
+    &__mini
+        min-height: 140px
