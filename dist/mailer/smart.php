@@ -12,15 +12,15 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'SMTP.Office365.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '';                 // Наш логин
-$mail->Password = '';                           // Наш пароль от ящика
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    // TCP port to connect to
+$mail->Username = 'Q1Test2Server3@outlook.com';                 // Наш логин
+$mail->Password = '1Test2Server3';                           // Наш пароль от ящика
+$mail->SMTPSecure = 'STARTTLS';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;                                    // TCP port to connect to
  
-$mail->setFrom('', 'Pulse');   // От кого письмо 
-$mail->addAddress('');     // Add a recipient
+$mail->setFrom('Q1Test2Server3@outlook.com', 'GlobalOpt');   // От кого письмо 
+$mail->addAddress('SimpleRoom@yandex.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -34,7 +34,8 @@ $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '';
+	E-mail: ' . $email . '<br> 
+	Сообщение: ' . $text . '';
 
 if(!$mail->send()) {
     return false;
