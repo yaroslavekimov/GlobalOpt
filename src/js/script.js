@@ -50,11 +50,11 @@ $(document).ready(function(){
     //     })
     // });
 
-    // Валидация форм и маска ввода
+    // Маска ввода
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-    $('form').submit(function(e) {
+    $('#consultation').submit(function(e) {
         e.preventDefault();
         $.ajax({
             type: "POST",
@@ -62,7 +62,37 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-            $('#consultation, #consultation-form').fadeOut();
+            $('#consultation').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
+    $('#cons-form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+    
+    $('#questions_form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
             $('.overlay, #thanks').fadeIn('slow');
 
             $('form').trigger('reset');
