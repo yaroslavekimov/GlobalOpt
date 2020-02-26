@@ -3,7 +3,7 @@
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
-$txt = $_POST['text'];
+$txt = $_POST['txt'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
