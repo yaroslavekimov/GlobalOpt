@@ -27,12 +27,31 @@ $(document).ready(function(){
             {
                 breakpoint: 992,
                 settings: {
-                    dots: true,
+                    dots: false,
+                    autoplay: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    speed: 0,
+                    dots: false,
+                    autoplay: false,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    speed: 0,
+                    dots: false,
+                    autoplay: false,
                     arrows: false
                 }
             }
         ]
-    });
+    }),
 
     // MODAL
 

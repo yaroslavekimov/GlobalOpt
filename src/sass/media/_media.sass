@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px)  and (max-width:1200px)    
+@media only screen and (min-width: 992px)  and (max-width: 1200px)    
     .title
         text-align: center
         font-size: 22px
@@ -33,16 +33,16 @@
                 border-right: none
                 a 
                     text-align: center
-                    font-size: 10px
+                    font-size: 12px
                     line-height: 11px
                     padding: 0 3px
             &__number
                 margin-left: 15px
                 a
-                    font-size: 10px
+                    font-size: 12px
                     line-height: 11px
             &__tel-text
-                font-size: 11px
+                font-size: 13px
                 line-height: 11px
     .button
         width: 100px
@@ -53,7 +53,6 @@
         &__promo
             width: 130px
             height: 30px
-            text-transform: none
             display: block
             margin: 0 auto
     .promo
@@ -87,21 +86,23 @@
             align-items: center
             width: 320px
             margin-top: 15px
+        &__desc
+            font-size: 14px
     .adventage
         &__items
-            justify-content: center
+            // justify-content: center
         &__item
             margin-left: 15px
-            width: 350px
+            width: 380px
             height: 65px
         &__icon
             img
                 height: 70%
         &__desc
             margin-left: 15px
-            font-size: 12px
+            font-size: 14px
             span
-                font-size: 12px
+                font-size: 16px
     .simple
         min-height: 620px
         padding: 51px 0 57px 0
@@ -164,12 +165,14 @@
             a 
                 font-size: 12px
                 line-height: 12px
-                margin-right: 50px
+                margin-right: 200px
         &__number
             margin-left: 25px
             a
                 font-size: 12px
                 line-height: 12px
+        &__tel
+            margin-right: 15px
         &__tel-text
             font-size: 12px
             line-height: 12px
@@ -182,26 +185,221 @@
                 font-size: 12px
                 line-height: 12px
         
-@media (max-width: 991px)  
-    .nav
+@media only screen and (min-width: 767px)  and (max-width: 991px)
+    header
+        .nav
+            &__head
+                width: 90%
+                left: 50%
+                transform: translateX(-50%)
             &__logo
                 width: 48px
                 height: 50px
                 img
-                    width: 50%
+                    width: 75%
                     display: block
                     margin: 0 auto
-                    margin-top: 25px
+                    margin-top: 5px
             &__list
                 padding: 0
             &__list-item
                 border-right: none
                 a 
+                    text-align: center
                     font-size: 11px
-                    padding: 0 10px
+                    line-height: 11px
+                    padding: 0 3px
             &__number
-                margin-left: 20px
+                margin-left: 12px
                 a
-                    font-size: 14px
+                    font-size: 12px
+                    line-height: 11px
             &__tel-text
+                font-size: 13px
+                line-height: 11px
+    .button
+        width: 100px
+        height: 30px
+        font-size: 10px
+        line-height: 11px
+        margin-left: 5px
+        &__promo
+            width: 130px
+            height: 30px
+            display: block
+            margin: 0 auto
+    .promo
+        position: relative
+        min-height: 680px
+        padding: 100px 0 82px 0
+        background: url(../../img/bg/promo_bg.jpg) center center/cover no-repeat
+        &__header
+            font-size: 18px
+        &__title
+            font-size: 40px
+        &__subtitle
+            font-size: 24px
+        &__left
+            width: 300px
+        &__right
+            width: 300px
+        &__el
+            width: 7px
+            height: 7px
+        &__wrapper
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: flex-start
+            margin-bottom: 39px
+        &__items
+            display: flex
+            flex-direction: column 
+            justify-content: center
+            align-items: center
+            width: 250px
+            margin-top: 15px
+        &__desc
+            font-size: 12px
+    .adventage
+        &__item
+            margin-top: 15px
+            margin-left: 15px
+            width: 600px
+            height: 100px
+        &__icon
+            img
+                height: 70%
+        &__desc
+            margin-left: 15px
+            font-size: 14px
+            span
+                font-size: 16px
+    .simple
+        min-height: 620px
+        padding: 51px 0 57px 0
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+        &__item
+            margin-top: 20px
+            width: 500px
+    .transfer
+        min-height: 610px
+        padding: 53px 0 56px 0
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: center
+        &__item
+            margin: 20px 50px
+    .consultation
+        position: relative
+        min-height: 350px
+        padding-bottom: 58px
+        &__razr-up
+            width: 200px
+        &__img
+            width: 75px
+            height: 75px
+        &__icon
+            justify-content: center
+        &__razr-down
+            width: 150px
+    .work
+        min-height: 454px
+        padding: 51px 0 46px 0
+        background-color: #f3f3f3
+        &__wrapper
+            justify-content: center
+        &__item
+            margin-top: 20px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            width: 250px
+    .reviews__desc
+        width: 450px
+    .carousel
+        .slick-prev, .slick-next
+            position: absolute
+            top: 35px
+            left: 365px
+            width: 14px
+            height: 46px
+            border: none
+            background-color: #fff
+            z-index: 2
+        .slick-next
+            right: 380px
+            left: auto
+        img
+            display: block
+            margin: 0 auto
+    .feed__form
+        flex-direction: column
+        input
+            margin: 5px 1px
+            padding: 0 20px
+            width: 220px
+            height: 45px
+            border: 1.0px solid rgba(0,0,0,0.21)
+            border-radius: 50px
+            &:nth-child(4)
+                margin: 5px 1px
+                width: 220px
+                height: 45px
+                border-radius: 50px
+    .questions
+        min-height: 500px
+        &__head
+            width: 400px
+            height: 68px
+        &__title
+            text-align: center
+            font-size: 14px
+            line-height: 12px
+        &__subtitle
+            font-size: 11px
+            line-height: 10px
+        &__wrapper
+            width: 400px
+    .button
+        &__mt27
+            margin: 0
+            margin-top: 5px
+    .footer
+        min-height: 201px
+        background-color: $bg-color
+        &__logo
+            img
+                width: 75%
+                margin: 0 auto
+                margin-top: 10px
+                display: block
+        &__link
+            font-size: 12px
+            line-height: 12px
+            a 
+                font-size: 12px
+                line-height: 12px
+                margin-right: 200px
+        &__number
+            margin-left: 25px
+            a
+                font-size: 12px
+                line-height: 12px
+        &__tel
+            margin-right: 15px
+        &__tel-text
+            font-size: 12px
+            line-height: 12px
+        .scratch, .web 
+            a 
                 font-size: 11px
+                line-height: 11px
+        .police
+            a 
+                font-size: 12px
+                line-height: 12px
