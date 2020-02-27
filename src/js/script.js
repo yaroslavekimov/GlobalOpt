@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.nav__menu'),
-    menuItem = document.querySelectorAll('.nav__list'),
+    menuItem = document.querySelectorAll('.nav__list-item'),
     hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', () => {
@@ -73,7 +73,7 @@ $(document).ready(function(){
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-    $('#consultation').submit(function(e) {
+    $('#cons-mod').submit(function(e) {
         e.preventDefault();
         $.ajax({
             type: "POST",
