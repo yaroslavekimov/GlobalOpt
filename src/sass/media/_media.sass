@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px)  and (max-width: 1200px)    
+@media (max-width: 1200px)    
     .title
         text-align: center
         font-size: 22px
@@ -184,8 +184,10 @@
             a 
                 font-size: 12px
                 line-height: 12px
-        
-@media only screen and (min-width: 767px)  and (max-width: 991px)
+    .modal
+        width: 400px
+        min-height: 200px    
+@media (max-width: 991px)
     header
         .nav
             &__head
@@ -232,7 +234,7 @@
         position: relative
         min-height: 680px
         padding: 100px 0 82px 0
-        background: url(../../img/bg/promo_bg.jpg) center center/cover no-repeat
+        background: url(../img/bg/promo_bg.jpg) center center/cover no-repeat
         &__header
             font-size: 18px
         &__title
@@ -370,36 +372,191 @@
             margin: 0
             margin-top: 5px
     .footer
-        min-height: 201px
+        min-height: 150px
         background-color: $bg-color
         &__logo
+            height: 50px
+            margin: 0
             img
-                width: 75%
-                margin: 0 auto
-                margin-top: 10px
-                display: block
+                width: 50%
+                margin: 0
         &__link
-            font-size: 12px
-            line-height: 12px
+            font-size: 10px
+            line-height: 10px
             a 
-                font-size: 12px
-                line-height: 12px
-                margin-right: 200px
+                font-size: 10px
+                line-height: 10px
+                margin-right: 10px
         &__number
             margin-left: 25px
             a
                 font-size: 12px
                 line-height: 12px
         &__tel
-            margin-right: 15px
-        &__tel-text
-            font-size: 12px
-            line-height: 12px
+            display: none
         .scratch, .web 
             a 
-                font-size: 11px
-                line-height: 11px
+                font-size: 10px
+                line-height: 10px
         .police
             a 
-                font-size: 12px
+                font-size: 10px
                 line-height: 12px
+@media (max-width: 767px)    
+    header
+        position: relative
+        .nav
+            &__logo
+                display: none
+            &__head
+                justify-content: flex-end
+            &__tel
+                margin-right: 15px
+            &__menu
+                width: 120%
+                height: 100%
+                bottom: -1000px
+                position: fixed
+                left: -10%
+                transform:translateX(-50%)
+                transition: 1s all
+                &_active
+                    position: fixed
+                    width: 120%
+                    height: 100%
+                    bottom: -120px
+            &__list
+                flex-direction: column
+            &__list-item
+                width: 100%
+                a 
+                    display: blocks
+                    padding: 10px
+                    font-size: 25px
+                    line-height: 65px
+                    font-weight: 400
+                    color: #ffffff
+                    padding: 0 10px
+                    background-color: rgba(0, 0, 0, 0.8)
+    .hamburger
+        display: block
+        position: absolute
+        left: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span 
+            display: block
+            left: 10px
+            top: 50% 
+            height: 2px
+            width: 100%
+            background-color: #fff 
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active 
+            span 
+                margin-bottom: -2px 
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+@media (max-width: 575px) 
+    header
+        position: relative
+        .nav
+            &__head
+                width: 90%
+            &__tel
+                display: none
+            &__menu
+                width: 180%
+                height: 100%
+                bottom: -1000px
+                position: fixed
+                left: -40%
+                transform:translateX(-50%)
+                transition: 1s all
+                &_active
+                    position: fixed
+                    width: 180%
+                    height: 100%
+                    bottom: -120px
+        .hamburger
+            display: block
+            position: absolute
+            left: 10px
+            top: 50%
+            transform: translateY(-50%)
+            width: 26px
+            height: 12px
+    .promo
+        min-height: 390px
+        padding: 80px 0 60px 0
+        &__header
+            font-size: 15px
+            line-height: 20px
+        &__title
+            font-size: 22px
+            line-height: 20px
+        &__subtitle
+            font-size: 15px
+            line-height: 20px
+        &__razr
+            display: none
+        &__wrapper
+            display: none
+    .adventage
+        &__icon
+            display: none
+        &__desc
+            margin-left: 0
+            font-size: 10px
+            span    
+                font-size: 11px
+        &__item
+            margin: 0
+            margin-top: 40px
+            height: 50px
+    .modal
+        width: 260px
+        &__close
+            right: -20px
+    .feed__form
+        input
+            width: 180px
+    .consultation
+        position: relative
+        min-height: 350px
+        padding-bottom: 58px
+        &__razr-up
+            display: none
+        &__img
+            width: 75px
+            height: 75px
+        &__icon
+            justify-content: center
+        &__razr-down
+            display: none
+    .reviews__desc
+        width: 250px
+    .questions
+        min-height: 500px
+        &__head
+            width: 300px
+        &__wrapper
+            width: 300px
+    .footer
+        &__logo
+            display: none
+        &__number
+            display: none
+        &__down 
+            flex-direction: column
+    .scratch
+        display: none
+    .web
+        flex-direction: column
