@@ -14,28 +14,6 @@ header
         &__logo
             width: 96px
             height: 100px
-        &__list
-            margin: 0
-            display: flex
-            justify-content: space-between
-            align-items: center
-            list-style-type: none
-            padding: none
-            height: 14px
-        &__list-item
-            border-right: 1px dotted rgba(255, 255, 255, 0.4)
-            &:last-child
-                border-right: none
-            a 
-                display: block
-                font-size: 15px
-                line-height: 16px
-                font-weight: 400
-                color: #ffffff
-                padding: 0 10px
-                cursor: pointer
-                &:hover
-                    color: $main-color
         &__number
             display: flex
             justify-content: flex-end
@@ -57,4 +35,25 @@ header
             line-height: 24px
             font-weight: 300
             color: #ffffff
-            
+    .menu
+        margin: 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style-type: none
+        padding: none
+        height: 14px
+        &_item
+            border-right: 1px dotted rgba(255, 255, 255, 0.4)
+            &:last-child
+                border-right: none
+            a 
+                display: block
+                font-size: 15px
+                line-height: 16px
+                font-weight: 400
+                color: #ffffff
+                padding: 0 10px
+                cursor: pointer
+                &:hover
+                    color: $main-color

@@ -1,21 +1,3 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.nav__menu'),
-    menuItem = document.querySelectorAll('.nav__list-item'),
-    hamburger = document.querySelector('.hamburger');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger_active');
-        menu.classList.toggle('nav__menu_active');
-    });
-
-    menuItem.forEach(item => {
-        item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
-            menu.classList.toggle('nav__menu_active');
-        })
-    })
-})
-
 $(document).ready(function(){
     $('.carousel__item').slick({
         speed: 1200,
@@ -61,13 +43,6 @@ $(document).ready(function(){
     $('.modal__close').on('click', function() {
         $('.overlay, #consultation, #thanks').fadeOut('slow');
     });
-
-    // $('.button__price').each(function(i) {
-    //     $(this).on('click', function() {
-    //         $('#order .modal__desc').text($('.catalog-item__header').eq(i).text());
-    //         $('.overlay, #order').fadeIn('slow');
-    //     })
-    // });
 
     // Маска ввода
 
@@ -137,3 +112,21 @@ $(document).ready(function(){
 
     new WOW().init();
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.menu'),
+    menuItem = document.querySelectorAll('.menu_item'),
+    hamburger = document.querySelector('.hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('menu_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('menu_active');
+        })
+    })
+})
