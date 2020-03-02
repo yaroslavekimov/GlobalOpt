@@ -97,13 +97,13 @@ $(document).ready(function(){
     
 // // Smooth scroll and pageup
 
-//     $(window).scroll(function() {
-//         if ($(this).scrollTop() > 1600) {
-//             $('.pageup').fadeIn();
-//         } else {
-//             $('.pageup').fadeOut();
-//         }
-//     });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
     
 //     $("a[href^='#']").click(function(){
 //         const _href = $(this).attr("href");
